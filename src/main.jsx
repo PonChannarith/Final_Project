@@ -13,6 +13,8 @@ import Error from './page/error-page/Error';
 import Create from './page/create/Create';
 import Forum from './page/forum/Forum';
 import AboutUs from './page/about-us/AboutUs';
+// import Home from './page/home/Home';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -50,13 +52,13 @@ const router = createBrowserRouter([
       {
         path: '/notification',
         element: <Notification />
-      },
-      {
-        path: '/login',
-        element: <Login />
       }
     ]
   },
+  {
+    path: '/login',
+    element: <Login />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
