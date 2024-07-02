@@ -1,121 +1,77 @@
-import React from 'react'
-const Register = ()=> {
+const Register = () => {
   return (
     <>
-    <section className="bg-gray-50 dark:bg-gray-900 ">
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <img
-          className="w-[100px] h-[100px] mr-2"
-          src="src/assets/stemlogo_register.jpg"
-          alt="logo"
-        />
-        <div className=" shadow-2xl w-full bg-white rounded-lg dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-          <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 className="text-[32px] text-blue-700  font-bold leading-tight tracking-tight  md:text-2xl dark:text-white font-suwannaphum text-center">
-              បង្កើតគណនី
-            </h1>
-            <form className="space-y-4 md:space-y-6" action="#">
-              <div>
-                <label
-                  for="confirm-password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white font-suwannaphum"
-                >
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  placeholder="បញ្ចូលឈ្មោះរបស់អ្នក"
-                  className="font-suwannaphum bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  required=""
+      <div className="h-[100vh] items-center flex justify-center lg:px-0 rounded-2xl">
+        <div className="max-w-screen-xl border shadow sm:rounded-lg flex justify-center flex-1 rounded-2xl">
+          <div className="flex-1 text-center hidden md:flex">
+            <div className=" xl:m-16 w-full  bg-center rounded-2xl  ">
+              <img src="src/assets/Login.gif" alt="login" />
+            </div>
+          </div>
+          <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
+            <div className=" flex flex-col items-center">
+              <div className="text-center">
+                <img
+                  src="src/assets/Logo.png"
+                  alt="STEM"
+                  className="w-[100px] h-[70px] m-auto pb-5"
                 />
+                <h1 className=" font-suwannaphum text-2xl xl:text-4xl font-extrabold text-[#0A36A5]">
+                  បង្កើតគណនី
+                </h1>
               </div>
-              <div>
-                <label
-                  for="confirm-password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white font-suwannaphum"
-                >
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  placeholder="បញ្ចូលត្រកូលរបស់អ្នក"
-                  className="font-suwannaphum bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  required=""
-                />
+              <div className="w-full flex-1 mt-8">
+                <div className=" max-w-xs flex flex-col gap-4">
+                  <input
+                    className="w-full font-suwannaphum  px-5 py-3 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                    type="text"
+                    placeholder="Enter your name"
+                  />
+                  <input
+                    className="w-full font-suwannaphum  px-5 py-3 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <input
+                    className="w-full font-suwannaphum  px-5 py-3 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                    type="password"
+                    placeholder="Enter your password"
+                  />
+                  <input
+                    className="w-full font-suwannaphum  px-5 py-3 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                    type="password"
+                    placeholder="Confirm Password"
+                  />
+                  <button className="mt-5 tracking-wide font-semibold bg-[#4678f5] text-gray-100 w-full py-4 rounded-[50px] hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                    <svg
+                      className="w-6 h-6 -ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      strokeLinecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                      <circle cx="8.5" cy="7" r="4" />
+                      <path d="M20 8v6M23 11h-6" />
+                    </svg>
+                    <span className="ml-3 font-suwannaphum ">ចុះឈ្មោះ</span>
+                  </button>
+                  <p className="mt-6 text-xs text-gray-600 text-center​ font-suwannphum">
+                    មានគណនីរួចហើយ?{" "}
+                    <a href="">
+                      <span className="text-blue-900 font-semibold font-suwannphum">
+                        ចូលគណនី
+                      </span>
+                    </a>
+                  </p>
+                </div>
               </div>
-              <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white font-suwannaphum"
-                >
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="font-suwannaphum bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="បញ្ចូលអ៊ីមែលរបស់អ្នក"
-                  required=""
-                />
-              </div>
-              <div>
-                <label
-                  for="password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white font-suwannaphum"
-                >
-                  Password
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="បញ្ចូលលេខសម្ងាត់របស់អ្នក"
-                  className="font-suwannaphum bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  required=""
-                />
-              </div>
-              <div>
-                <label
-                  for="confirm-password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white font-suwannaphum"
-                >
-                  Confirm password
-                </label>
-                <input
-                  type="confirm-password"
-                  name="confirm-password"
-                  id="confirm-password"
-                  placeholder="បញ្ចូលលេខសម្ងាត់របស់អ្នក"
-                  className="font-suwannaphum bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  required=""
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full font-suwannaphum bg-blue-700 text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              >
-                បង្កើតគណនី
-              </button>
-              <p className="text-sm font-light text-gray-500 dark:text-gray-400 font-suwannaphum">
-                មានគណនីរួចហើយ?{" "}
-                <a
-                  href="#"
-                  className="font-medium text-primary-600 hover:underline dark:text-primary-500 font-suwannaphum text-blue-500"
-                >
-                  ​​ ចូលគណនី?
-                </a>
-              </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </>
-  )
-}
+    </>
+  );
+};
 export default Register;

@@ -1,5 +1,6 @@
-import React from 'react'
-export default function Login()  {
+import React from "react";
+import { Link } from "react-router-dom";
+export default function Login() {
   return (
     <>
       <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
@@ -7,11 +8,11 @@ export default function Login()  {
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div className="sm:mx-auto sm:w-full sm:max-w-md mb-5">
               <img
-                src="src/assets/LOGO-removebg-preview.png"
+                src="src/assets/Logo.png"
                 alt="Stem"
-                className="w-[100px] h-[100px] m-auto"
+                className="w-[100px] h-[70px] m-auto"
               />
-              <h2 className="mt-4 text-center text-[32px] text-blue-700 font-suwannphum font-bold text-gray-900​ ​">
+              <h2 className="mt-4 text-center text-[32px] text-blue-700 font-suwannaphum font-bold text-gray-900​ ​">
                 ចូលគណនី
               </h2>
             </div>
@@ -19,7 +20,7 @@ export default function Login()  {
               <div>
                 <label
                   for="email"
-                  className=" font-suwannphum text-sm font-medium text-gray-700 "
+                  className=" font-suwannaphum text-sm font-medium text-gray-700 "
                 >
                   អុីម៉ែលអ្នកប្រើ
                 </label>
@@ -30,7 +31,7 @@ export default function Login()  {
                     type="email"
                     autocomplete="email"
                     required
-                    className="font-suwannphum appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                    className="font-suwannaphum appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="បញ្ចូលឈ្មោះរបស់អ្នក"
                   />
                 </div>
@@ -39,7 +40,7 @@ export default function Login()  {
               <div>
                 <label
                   for="password"
-                  className=" font-suwannphum block text-sm font-medium text-gray-700"
+                  className=" font-suwannaphum block text-sm font-medium text-gray-700"
                 >
                   លេខកូដ
                 </label>
@@ -50,7 +51,7 @@ export default function Login()  {
                     type="password"
                     autocomplete="current-password"
                     required
-                    className=" font-suwannphum appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                    className=" font-suwannaphum appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="បញ្ចូលលេខកូដរបស់អ្នក"
                   />
                 </div>
@@ -58,15 +59,18 @@ export default function Login()  {
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <h4 className="ml-2 block text-sm​​ font-bold   text-gray-900 suwannaphum">
-                    បង្កើតគណនី
-                  </h4>
+                  <Link as={Link} to={"/register"}>
+                    {" "}
+                    <h4 className="ml-2 block text-sm​​ font-bold   text-gray-900 font-suwannaphum">
+                      បង្កើតគណនី
+                    </h4>
+                  </Link>
                 </div>
 
                 <div className="text-sm">
                   <a
                     href="#"
-                    className="font-medium text-blue-600​ suwannaphum hover:text-blue-500"
+                    className="font-medium text-blue-600​ font-suwannaphum hover:text-blue-500"
                   >
                     ភ្លេចពាក្យសម្ងាត់?
                   </a>
@@ -76,7 +80,8 @@ export default function Login()  {
               <div>
                 <button
                   type="submit"
-                  className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium​ font-suwannphum rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="group r relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium​ font-suwannaphum
+                    text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   ចូលគណនី
                 </button>
@@ -88,7 +93,7 @@ export default function Login()  {
                   <div className="w-full border-t border-gray-300"></div>
                 </div>
                 <div className="relative flex justify-center text-sm">
-                  <span className=" font-suwannphum px-2 bg-gray-100 text-gray-500">
+                  <span className=" font-suwannaphum px-2 bg-gray-100 text-gray-500">
                     ឬ​ បង្កើតគណនីជាមួយ
                   </span>
                 </div>
@@ -137,5 +142,5 @@ export default function Login()  {
         </div>
       </div>
     </>
-  )
+  );
 }

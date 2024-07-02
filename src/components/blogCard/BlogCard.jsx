@@ -1,13 +1,20 @@
-import React from 'react';
+import React from "react";
 
 const BlogCard = () => {
   return (
     <>
       <div className=" sm:p-10 md:p-16 rounded-t-lg max-w-full  -mt-[40px]">
         <div className="grid grid-cols-4 gap-7 rounded-t-lg">
-          {[1, 2, 3, 4,5].map((index) => (
-            <div key={index} className="radies shadow-xl bg-white lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal rounded-lg">
-              <img src="src/assets/blog-card.webp" className="w-full rounded-t-lg" alt="Blog" />
+          {[1, 2, 3, 4, 5].map((index) => (
+            <div
+              key={index}
+              className="radies shadow-xl bg-white lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal rounded-lg"
+            >
+              <img
+                src="src/assets/blog-card.webp"
+                className="w-full rounded-t-lg"
+                alt="Blog"
+              />
               <div className="p-2 pt-2">
                 <div className="mb-0">
                   <p className="text-gray-700 text-[15px] -mt-1 pt-3 font-suwannaphum">
